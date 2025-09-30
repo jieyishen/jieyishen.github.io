@@ -36,6 +36,7 @@ theme:
 plugins:
   - search:
       lang: zh
+  - awesome-pages
 
 # Extensions
 markdown_extensions:
@@ -50,11 +51,7 @@ markdown_extensions:
   - toc:
       permalink: true
 
-# Navigation
-nav:
-  - 首页: index.md
-  - 强化学习:
-    - 首页: RL/index.md
+# Navigation - 使用 awesome-pages 自动生成
 
 # Extra
 extra:
