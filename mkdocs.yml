@@ -1,0 +1,77 @@
+site_name: jieyishen的网站
+site_description: 个人网站和博客
+site_author: jieyishen
+site_url: https://jieyishen.github.io
+
+# Repository
+repo_name: jieyishen/jieyishen.github.io
+repo_url: https://github.com/jieyishen/jieyishen.github.io
+edit_uri: edit/main/docs/
+
+# Theme
+theme:
+  name: material
+  language: zh
+  palette:
+    - scheme: default
+      primary: blue
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 切换到暗色模式
+    - scheme: slate
+      primary: blue
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 切换到浅色模式
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.highlight
+    - search.share
+
+# Plugins
+plugins:
+  - search:
+      lang: zh
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.arithmatex:
+      generic: true
+  - toc:
+      permalink: true
+
+# Navigation
+nav:
+  - 首页: index.md
+  - 博客:
+    - 博客首页: blog/index.md
+    - 我的第一篇博客文章: blog/first-post.md
+    - Python 编程技巧: blog/python-tips.md
+  - 数学公式: math.md
+  - 关于: about.md
+
+# Extra
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/jieyishen
+    - icon: fontawesome/solid/envelope
+      link: mailto:your-email@example.com
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+# Copyright
+copyright: Copyright &copy; 2025 jieyishen
